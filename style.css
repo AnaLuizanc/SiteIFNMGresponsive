@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
@@ -7,11 +9,139 @@ html {
     text-align: justify;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+body {
+    background-color: #F1F1F1;
 }
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    background-color: rgb(68, 131, 66);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.header h1, h3 {
+    margin: 8px;
+    padding: 10px;
+}
+
+.header h3 {
+    font-weight: lighter;
+}
+
+.bar-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.left ul{
+    display: flex;
+    gap: 15px;
+}
+
+.left, .right {
+    display: flex;
+}
+
+.body-page{
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.first-container, .second-container {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.first-container h3, .second-container h3 {
+    margin: 0;
+    padding-left: 0;
+}
+
+.first-container h4, .second-container h4 {
+    margin: 10px 0px;
+}
+
+.cards {
+    justify-content: space-around;
+    margin: 0%;
+    padding: 0px;
+}
+
+.cards img {
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+.cards h3 {
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 22px;
+}
+
+.card1, .card2, .card3, .card4 {
+    padding: 0px 15px;
+    margin-bottom: 15px;
+    height: 200px;
+    align-items: center;
+}
+
+.card1 {
+    background-color: rgb(252, 193, 252);
+}
+
+.card2 {
+    background-color: #b5f2cc;
+}
+
+.card3 {
+    background-color: rgb(244, 216, 179);
+    
+}
+
+.card4 {
+    background-color: rgb(177, 187, 255);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer h3 {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
 
 [class*="col-"]{
     float: left;
@@ -32,4 +162,10 @@ html {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
